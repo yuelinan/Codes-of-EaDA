@@ -6,10 +6,10 @@ Official implementation of "Federated Learning for Explainable Molecule Represen
 
 ## How to run Fed-XMRL?
 
-To train Fed-XMRL on OGB dataset:
+To train F$^{2}$XMRL and  on OGB dataset:
 
 ```python
-sh cell.sh
+sh run.sh
 ```
 
 
