@@ -1,7 +1,7 @@
 python main.py \
   --dataset ogbg-molhiv \
   --by_default \
-  --model_name F2XMRL \
+  --model_name EaDA \
   --gnn=gin-virtual \
   --device=6 \
   --trails=1 \
