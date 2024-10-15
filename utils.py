@@ -58,14 +58,7 @@ def get_args():
     parser.add_argument('--date', type=str, default='0402')
     parser.add_argument('--model_name', type=str, default='Graph_Student', help='model name')
     parser.add_argument('--train_type', type=str, default='student', help='model name')
-    parser.add_argument('--teacher_model', type=str, default='/data/lnyue/GREA-main/teacher_model/teacher_0', help='model name')
 
-    ## only for www
-    parser.add_argument('--pred_augument_gnn', type=float, default=0.01)
-    parser.add_argument('--cycle_loss', type=float, default=0.01)
-    parser.add_argument('--teacher_loss', type=float, default=0.01)
-    
-    ## only for fed-rat
     parser.add_argument('--algin_loss', type=float, default=1)
     parser.add_argument('--client_number', type=int, default=4)
     parser.add_argument('--alpha', type=float, default=4.0)
