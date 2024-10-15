@@ -14,15 +14,15 @@ F_act = F.relu
 
 
 
-class F2XMRL(torch.nn.Module):
+class EaDA(torch.nn.Module):
 
     def __init__(self, num_tasks, num_layer = 5, emb_dim = 300, gnn_type = 'gin', drop_ratio = 0.5, gamma = 0.4, use_linear_predictor=False):
         '''
             num_tasks (int): number of labels to be predicted
         '''
 
-        super(F2XMRL, self).__init__()
-        print(F2XMRL)
+        super(EaDA, self).__init__()
+        print(EaDA)
         self.num_layer = num_layer
         self.drop_ratio = drop_ratio
         self.emb_dim = emb_dim
