@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from ogb.graphproppred import PygGraphPropPredDataset, Evaluator
 import random
 ## training
-from model import F2XMRL
+from model import EaDA
 from utils import init_weights, get_args, eval_test,train_xmrl,get_kmeans
 import copy
 
