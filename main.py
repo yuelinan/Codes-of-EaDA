@@ -73,7 +73,11 @@ def main(args,seed):
             N = len(idxs)
             print(f"Total number of samples: {N}, Total clients: {client_number}")
             idx_batch_per_client = [[] for _ in range(client_number)] 
-            idxs_per_label = [np.where(labels == i)[0] for i in range(labels.size()[1])] 
+            if labels.size()[1]==1:
+                label_num=2
+            else:
+                label_num = labels.size()[1]
+            idxs_per_label = [np.where(labels == i)[0] for i in range(label_num)] 
 
             idx_batch_per_client, min_size, weight = partition_labels_with_dirichlet_distribution(
                 N, alpha, client_number, idx_batch_per_client, idxs
