@@ -12,7 +12,7 @@ To train EaDA on the OGB datasets:
 ```python
 sh run.sh
 ```
-To train FedGR on Spurious-Motif dataset:
+To train EaDA on Spurious-Motif dataset:
 
 ```python
 # cd spmotif_codes
